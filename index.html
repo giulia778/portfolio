@@ -1,0 +1,4631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- IMPOSTAZIONI GENERALI -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Giulia Coviello - Personal Portfolio">
+
+    <meta name="author" content="Giulia Coviello">
+
+    <meta name="theme-color" content="#000000">
+
+    <title>Giulia Coviello - Portfolio</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+    <!-- TAILWIND CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- CONFIGURAZIONE TAILWIND -->
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    fontFamily: {
+
+                        manrope: ['Manrope', 'sans-serif']
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+
+
+
+    <!-- PDF.js per la visualizzazione e lo sfogliamento dei PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    </script>
+
+</head>
+
+
+<body class="m-0 w-full h-screen overflow-hidden font-sans">
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         HOME PAGE
+    ====================================================== -->
+
+    <section id="home-page" class="relative w-full h-screen overflow-hidden bg-black text-white">
+
+
+        <!-- FOTO DI SFONDO -->
+
+        <div class="fixed -top-5 -left-5 w-[calc(100%+40px)] h-[calc(100%+40px)]
+                    bg-cover bg-center blur-[4px] opacity-75 z-0" style="background-image: url('1 anno/1/3.png');">
+        </div>
+
+
+        <!-- MENU IN ALTO -->
+
+        <header class="absolute top-[15px] left-5 right-5 flex
+                       justify-between items-center z-10">
+
+            <a href="#" onclick="showPage('home-page'); return false;" class="text-white no-underline text-[13px] tracking-[1px]
+                      hover:opacity-50 transition-opacity">
+
+                GIULIA COVIELLO
+
+            </a>
+
+
+            <nav class="flex gap-[35px]">
+
+                <a href="#" onclick="showPage('who-page'); return false;" class="text-white no-underline text-[13px] tracking-[0.5px]
+                          hover:opacity-50 transition-opacity">
+
+                    WHO AM I
+
+                </a>
+
+
+                <a href="#" onclick="showPage('work-page'); return false;" class="text-white no-underline text-[13px] tracking-[0.5px]
+                          hover:opacity-50 transition-opacity">
+
+                    WORKS
+
+                </a>
+
+
+                <a href="#" onclick="showPage('contact-page'); return false;" class="text-white no-underline text-[13px] tracking-[0.5px]
+                          hover:opacity-50 transition-opacity">
+
+                    CONTACTS
+
+                </a>
+
+            </nav>
+
+        </header>
+
+
+
+        <!-- SCRITTA CENTRALE -->
+
+        <main class="absolute top-1/2 left-1/2 -translate-x-1/2
+                     -translate-y-1/2 w-full text-center z-[2]">
+
+            <h1 class="font-manrope font-extralight text-[120px]
+                       leading-[0.9] tracking-[-4px]">
+
+                HELLO, I'M<br>
+                GIULIA<br>
+                COVIELLO
+
+            </h1>
+
+        </main>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="absolute bottom-[15px] left-5 right-5
+                       flex justify-between items-center z-10">
+
+            <p class="text-[11px] tracking-[0.5px]">
+                GIULIA COVIELLO
+            </p>
+
+            <a href="#" onclick="showPage('work-page'); return false;" class="text-[11px] tracking-[0.5px] text-white
+          cursor-pointer hover:opacity-50 transition-opacity
+          no-underline">
+
+                PORTFOLIO OF A SIMPLE GIRL
+
+            </a>
+
+            <p class="text-[11px] tracking-[0.5px]">
+                2026
+            </p>
+
+        </footer>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+     WHO AM I
+====================================================== -->
+
+    <section id="who-page" class="hidden relative w-full h-screen overflow-hidden bg-black text-white">
+
+
+        <!-- =====================================================
+         MENU
+    ====================================================== -->
+
+        <header class="absolute top-[15px] left-5 right-5
+                   flex justify-between items-center z-20">
+
+            <a href="#" onclick="showPage('home-page'); return false;" class="text-white no-underline text-[13px] tracking-[1px]
+                   hover:opacity-50 transition-opacity">
+
+                HOME PAGE
+                <p>← </p>
+
+            </a>
+
+
+            <nav class="flex gap-[35px]">
+
+                <a href="#" onclick="showPage('who-page'); return false;" class="text-white no-underline text-[13px]
+                       hover:opacity-50 transition-opacity">
+
+                    WHO AM I
+
+                </a>
+
+
+                <a href="#" onclick="showPage('work-page'); return false;" class="text-white no-underline text-[13px]
+                       hover:opacity-50 transition-opacity">
+
+                    WORKS
+
+                </a>
+
+
+                <a href="#" onclick="showPage('contact-page'); return false;" class="text-white no-underline text-[13px]
+                       hover:opacity-50 transition-opacity">
+
+                    CONTACTS
+
+                </a>
+
+            </nav>
+
+        </header>
+
+
+
+        <!-- FASCIA NERA SOTTO IL MENU -->
+        <div class="absolute top-0 left-0 w-full h-[90px]
+            bg-black z-10 pointer-events-none">
+        </div>
+
+
+
+
+
+
+
+        <!-- =====================================================
+         CONTENUTO
+    ====================================================== -->
+
+        <div class="relative w-full h-full flex">
+
+
+            <!-- =================================================
+             COLONNA SINISTRA
+        ================================================== -->
+
+            <div id="who-text" class="relative z-0 w-[50%] h-full
+           flex flex-col justify-center
+           px-[6%] pr-[5%] pt-[180px] pb-[50px]
+           overflow-y-auto">
+
+
+                <h1 class="text-[38px] tracking-[1px] font-light mb-[25px]">
+
+                    ABOUT ME
+
+                </h1>
+
+
+                <p class="text-[13px] leading-[2] text-gray-300
+                      max-w-[480px] mb-[25px]">
+
+                    Hi! I'm Giulia Coviello, a creative soul with a unique
+                    and unconventional touch, constantly driven to experiment
+                    with new ideas and media. I've had a deep passion for art
+                    since I was a child, which I express by exploring different
+                    visual languages, colors, and communication tools.
+
+                    I'm constantly looking for new ways to express myself,
+                    explore my creativity and develop my skills.
+
+                    What excites me most is cross-disciplinary experimentation:
+                    I love blending art with code to create interactive works,
+                    designing and editing audio tracks, and leveraging 3D
+                    graphics for augmented and virtual reality.
+
+                </p>
+
+
+                <p class="text-[13px] leading-[2] text-gray-300
+                      max-w-[480px] mb-[40px]">
+
+                    For me, creativity is about observing the world from
+                    different perspectives, being curious and finding beauty
+                    in the smallest details.
+
+                </p>
+
+
+
+                <!-- SOFTWARE SKILLS -->
+
+                <h2 class="text-[14px] tracking-[2px] mb-[20px]">
+
+                    SOFTWARE SKILLS
+
+                </h2>
+
+
+                <div class="flex flex-wrap gap-x-[25px] gap-y-[15px]
+                        text-[11px] tracking-[1px] text-gray-400">
+
+                    <span>PHOTOSHOP</span>
+                    <span>ILLUSTRATOR</span>
+                    <span>INDESIGN</span>
+                    <span>PREMIERE PRO</span>
+                    <span>AFTER EFFECTS</span>
+                    <span>ANIMATE</span>
+                    <span>AUDITION</span>
+                    <span>ANTIGRAVITY</span>
+                    <span>BLENDER</span>
+                    <span>XD</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+             IMMAGINE DESTRA
+        ================================================== -->
+
+            <div class="absolute top-0 right-0
+                    w-[50%] h-screen">
+
+                <img src="1 anno/1/2.png" alt="Giulia Coviello" class="w-full h-full object-cover">
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- =====================================================
+     RESPONSIVE WHO AM I
+====================================================== -->
+
+    <style>
+        /* =====================================================
+       SCROLL DELLA COLONNA TESTO
+    ====================================================== */
+
+        #who-text {
+            scrollbar-width: thin;
+            scrollbar-color: #555 transparent;
+        }
+
+
+        /* =====================================================
+       TABLET / MOBILE
+    ====================================================== */
+
+        @media (max-width: 700px) {
+
+            #who-page {
+                height: 100vh;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+
+
+            #who-page>div {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+            }
+
+
+            /* =================================================
+           TESTO
+        ================================================== */
+
+            #who-page>div>div:first-child {
+
+                width: 100%;
+                height: auto;
+                min-height: auto;
+
+                padding: 100px 25px 60px 25px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                overflow-y: visible;
+
+            }
+
+
+            /* =================================================
+           IMMAGINE
+        ================================================== */
+
+            #who-page>div>div:last-child {
+
+                position: relative;
+
+                top: auto;
+                right: auto;
+
+                width: 100%;
+                height: 75vh;
+
+                flex-shrink: 0;
+
+            }
+
+
+            #who-page>div>div:last-child img {
+
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+
+                display: block;
+
+            }
+
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         WORK
+    ====================================================== -->
+
+    <!-- =====================================================
+         WORK PAGE (GRIGLIA OPERE)
+    ====================================================== -->
+
+    <section id="work-page" class="hidden relative w-full h-screen overflow-y-auto bg-white text-black">
+
+
+        <!-- MENU FISSO IN ALTO (Sfondo bianco per non far sovrapporre i testi durante lo scroll) -->
+
+        <header class="fixed top-0 left-0 w-full bg-white px-5 py-[15px]
+                       flex justify-between items-center z-30 ">
+
+            <a href="#" onclick="showPage('home-page'); return false;" class="text-black no-underline text-[13px] tracking-[1px]
+                      hover:opacity-50 transition-opacity">
+
+                HOME PAGE
+                <p>← </p>
+
+            </a>
+
+
+            <nav class="flex gap-[35px]">
+
+                <a href="#" onclick="showPage('who-page'); return false;" class="text-black no-underline text-[13px] tracking-[0.5px]
+                          hover:opacity-50 transition-opacity">
+
+                    WHO AM I
+
+                </a>
+
+
+                <a href="#" onclick="showPage('work-page'); return false;" class="text-black no-underline text-[13px] tracking-[0.5px]
+                          hover:opacity-50 transition-opacity ">
+
+                    WORKS
+
+                </a>
+
+
+                <a href="#" onclick="showPage('contact-page'); return false;" class="text-black no-underline text-[13px] tracking-[0.5px]
+                          hover:opacity-50 transition-opacity">
+
+                    CONTACTS
+
+                </a>
+
+            </nav>
+
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- CONTENUTO PAGINA WORK -->
+
+        <div class="pt-[90px] pb-[60px] px-5 max-w-[1400px] mx-auto">
+
+
+
+
+            <!-- TITOLO SEZIONE WORK (GRANDE ANCHE SU MOBILE) -->
+            <div class="py-8 mb-8 flex justify-center md:justify-start overflow-hidden">
+                <h1
+                    class="font-antonio text-[clamp(110px,18vw,170px)] font-bold tracking-[-0.04em] leading-none uppercase scale-y-125 origin-top text-black select-none whitespace-nowrap">
+                    WORKS
+                </h1>
+            </div>
+
+
+
+
+
+
+
+            <!-- GRIGLIA A 12 RIQUADRI -->
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t-[2px] border-b-[2px] border-black">
+
+
+
+
+
+
+                <!-- OPERA 1 -->
+                <div onclick="openProject('Project 01', '1 anno/1/3.png', '3D & Multimediale', 'Un progetto sperimentale di grafica 3D e animazione digitale.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="1 anno/1/3.png" alt="Project 01"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 01
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Reinterpretation of Robert
+                            Mapplethorpe’s photographs.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">8 photographs —
+                        2023</span>
+                </div>
+
+
+                <!-- OPERA 2 -->
+                <div onclick="openProject('Project 02', '1 anno/1/2.png', 'Digital Art', 'Esplorazione visiva su identità e media digitali.')"
+                    class="group border-b border-gray-200 sm:border-r-0 lg:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="2 anno/musa/Gemini_Generated_Image_vtj23uvtj23uvtj2.jpg" alt="Project 02"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 02
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Project for the MUSA exhibition;
+                            8-screen edit on feminism.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block"> video —
+                        2025</span>
+                </div>
+
+
+                <!-- OPERA 3 -->
+                <div onclick="openProject('Project 03', 'Code_Generated_Image.png', 'Generative Art', 'Algoritmi e codice applicati alla generazione visiva.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/styrangis /Griglia audiovisiva somatica distorta.png" alt="Project 03"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 03
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">An interactive model that uses the
+                            device's camera to detect and track the user's hand movements. The gestures are mapped in
+                            real time and transformed into sounds, while the grid lines deform and move in response to
+                            the movements.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">interactive model —
+                        2026</span>
+                </div>
+
+
+                <!-- OPERA 4 (ESTREMA DESTRA - NESSUN BORDO DESTRO) -->
+                <div onclick="openProject('Project 04', '1 anno/1/3.png', 'Brand Identity', 'Sviluppo di un linguaggio visivo coerente e contemporaneo.')"
+                    class="group border-b border-gray-200 border-r-0 p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="1 anno/2/Code_Generated_Image.jpg" alt="Project 04"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 04
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">A 3D sculpture explores the theme of
+                            suicide through sinuous shapes and contorted postures that evoke human fragility.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">video —
+                        2023</span>
+                </div>
+
+
+                <!-- OPERA 5 -->
+                <div onclick="openProject('Project 05', '1 anno/1/2.png', 'Video Editing', 'Montaggio video e color grading per video musicali.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="1 anno/3/Code_Generated_Image.jpg" alt="Project 05"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 05
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">A re-sound design project exploring
+                            childhood memories and the passage of time.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">4 videos —
+                        2024</span>
+                </div>
+
+
+
+
+                <!-- OPERA 6 -->
+                <div onclick="openProject('Project 06', 'Code_Generated_Image.png', 'Sound Design', 'Composizione e manipolazione audio per installazioni.')"
+                    class="group border-b border-gray-200 sm:border-r-0 lg:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="2 anno/4/Code_Generated_Image.jpg" alt="Project 06"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 06
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">The particles symbolize the partisans
+                            and their fight for freedom, while the lights represent hope in the darkness. Together, they
+                            become a collective force of resistance and solidarity.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">4 videos —
+                        2025</span>
+                </div>
+
+
+
+
+                <!-- OPERA 7 -->
+                <div onclick="openProject('Project 07', '1 anno/1/3.png', 'Web Design', 'Sviluppo front-end e interfacce utente responsive.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="2 anno/5/Code_Generated_Image 2.png" alt="Project 07"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 07
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">An acoustic and sensory
+                            reinterpretation of the ending of I Have No Mouth, and I Must Scream.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">soundscape — 2025</span>
+                </div>
+
+
+
+
+
+
+
+                <!-- OPERA 8 (ESTREMA DESTRA - NESSUN BORDO DESTRO) -->
+                <div onclick="openProject('Project 08', '1 anno/1/2.png', '3D Modeling', 'Modellazione di oggetti e scene complesse in Blender.')"
+                    class="group border-b border-gray-200 border-r-0 p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/styrangis /Gemini_Generated_Image_z4bumkz4bumkz4bu.jpg" alt="Project 08"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 08
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">An interactive installation that
+                            translates body movements into a real-time number avatar. Dynamic motion triggers chaotic
+                            visual and audio feedback, turning physical activity into pure data and sound.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">interactive model —
+                        2026</span>
+                </div>
+
+
+
+
+
+
+
+                <!-- OPERA 9 -->
+                <div onclick="openProject('Project 09', 'Code_Generated_Image.png', 'Augmented Reality', 'Esperienza AR immersiva integrata su mobile.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/styrangis /Screenshot 2026-10-04 alle 22.57.01.png" alt="Project 09"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 09
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Atychiphobia - The fear of failure</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">video — 2026</span>
+                </div>
+
+
+
+                <!-- OPERA 10 -->
+                <div onclick="openProject('Project 10', '1 anno/1/3.png', 'Editorial Design', 'Impaginazione e veste grafica per pubblicazioni d\'arte.')"
+                    class="group border-b border-gray-200 sm:border-r-0 lg:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/2.jpg" alt="Project 10"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 10
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Menabo logo</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">Menabo —
+                        2021</span>
+                </div>
+
+
+
+
+                <!-- OPERA 11 -->
+                <div onclick="openProject('Project 11', '1 anno/1/2.png', 'Motion Graphics', 'Animazioni 2D e compositing avanzato.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/13) DESIGN/3.jpg" alt="Project 11"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 11
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Design and creation of a handmade
+                            object.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">design — 2025</span>
+                </div>
+
+
+
+
+
+                <!-- OPERA 12 (ESTREMA DESTRA - NESSUN BORDO DESTRO) -->
+                <div onclick="openProject('Project 12', 'Code_Generated_Image.png', 'Illustration', 'Illustrazioni vettoriali e storyboard concettuali.')"
+                    class="group border-b border-gray-200 border-r-0 p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/Gemini_Generated_Image_f9nhobf9nhobf9nh.jpg" alt="Project 12"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 12
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Video on Body modification as a
+                            subversive practice, rejecting standardized beauty norms by transforming the body 'for the
+                            worse' through performance art.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">video — 2025</span>
+                </div>
+
+
+
+
+
+
+
+
+
+                <!-- OPERA 13 -->
+                <div onclick="openProject('Project 13', 'Code_Generated_Image.png', 'Augmented Reality', 'Esperienza AR immersiva integrata su mobile.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="2 anno/7/Screenshot 2026-10-05 alle 00.11.19.png" alt="Project 13"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 13
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Split screen.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">3 videos — 2024</span>
+                </div>
+
+
+
+
+
+
+                <!-- OPERA 14 -->
+                <div onclick="openProject('Project 14', '1 anno/1/3.png', 'Editorial Design', 'Impaginazione e veste grafica per pubblicazioni d\'arte.')"
+                    class="group border-b border-gray-200 sm:border-r-0 lg:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/styrangis /4.jpg" alt="Project 14"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 14
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Interactive project exploring the 4
+                            dimensions.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">interactive model —
+                        2026</span>
+                </div>
+
+
+
+
+
+
+                <!-- OPERA 15 -->
+                <div onclick="openProject('Project 15', '1 anno/1/2.png', 'Motion Graphics', 'Animazioni 2D e compositing avanzato.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="1 anno/2) gifs/Gemini_Generated_Image_19udgh19udgh19ud.jpg" alt="Project 15"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 15
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">The gifs explore the aesthetics and
+                            symbolism of the circle through a hypnotic visual loop.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">4 gifs — 2024</span>
+                </div>
+
+
+
+
+
+
+                <!-- OPERA 16 (ESTREMA DESTRA - NESSUN BORDO DESTRO) -->
+                <div onclick="openProject('Project 16', 'Code_Generated_Image.png', 'Illustration', 'Illustrazioni vettoriali e storyboard concettuali.')"
+                    class="group border-b border-gray-200 border-r-0 p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/styrangis /5.jpg" alt="Project 16"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 16
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Video about consumerism.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">video— 2026</span>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- OPERA 17 -->
+                <div onclick="openProject('Project 17', 'Code_Generated_Image.png', 'Augmented Reality', 'Esperienza AR immersiva integrata su mobile.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/13) DESIGN/6.jpg" alt="Project 09"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 17
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Object analysis and redesign for
+                            upcycling.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">design — 2026</span>
+                </div>
+
+
+
+
+
+
+
+                <!-- OPERA 18 -->
+                <div onclick="openProject('Project 18', '1 anno/1/3.png', 'Editorial Design', 'Impaginazione e veste grafica per pubblicazioni d\'arte.')"
+                    class="group border-b border-gray-200 sm:border-r-0 lg:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="2 anno/6/1.jpg" alt="Project 10"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 18
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Video editing based on an audio track
+                            provided by the professor, based on a Charlie Chaplin monologue.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">video—
+                        2025</span>
+                </div>
+
+
+
+                <!-- OPERA 19 -->
+                <div onclick="openProject('Project 19', '1 anno/1/2.png', 'Motion Graphics', 'Animazioni 2D e compositing avanzato.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="2 anno/6/2.jpg" alt="Project 11"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 19
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Video editing project structured
+                            around the theme of evolution assigned by the professor.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">video — 2025</span>
+                </div>
+
+
+
+
+                <!-- OPERA 20 (ESTREMA DESTRA - NESSUN BORDO DESTRO) -->
+                <div onclick="openProject('Project 20', 'Code_Generated_Image.png', 'Illustration', 'Illustrazioni vettoriali e storyboard concettuali.')"
+                    class="group border-b border-gray-200 border-r-0 p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/13) DESIGN/Micelio.pdf" alt="Project 12"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 20
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Design project on the use of mycelium
+                            in a dystopian world.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">design — 2025</span>
+                </div>
+
+
+
+
+
+
+
+
+
+                <!-- OPERA 21 -->
+                <div onclick="openProject('Project 21', 'Code_Generated_Image.png', 'Augmented Reality', 'Esperienza AR immersiva integrata su mobile.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/3d/untitled.png" alt="Project 13"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 21
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">3D.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">3d model — 2026</span>
+                </div>
+
+
+                <!-- OPERA 22 -->
+                <div onclick="openProject('Project 22', '1 anno/1/3.png', 'Editorial Design', 'Impaginazione e veste grafica per pubblicazioni d\'arte.')"
+                    class="group border-b border-gray-200 sm:border-r-0 lg:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="1 anno/rx/ok/1.png" alt="Project 14"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 22
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Use of generative artificial
+                            intelligence to simulate falsified scientific events.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">photographs —
+                        2024</span>
+                </div>
+
+
+
+                <!-- OPERA 23 -->
+                <div onclick="openProject('Project 23', '1 anno/1/2.png', 'Motion Graphics', 'Animazioni 2D e compositing avanzato.')"
+                    class="group border-b border-gray-200 sm:border-r p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="3° anno/13) DESIGN//Logo astratto verde e blu con scritta ESIGN.png"
+                                alt="Project 15"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 23
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Logo design for a design exhibition
+                            "SEdesign" focused on recycling and conviviality.</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">Design — 2026</span>
+                </div>
+
+
+
+                <!-- OPERA 24 (ESTREMA DESTRA - NESSUN BORDO DESTRO) -->
+                <div onclick="openProject('Project 24', 'Code_Generated_Image.png', 'Illustration', 'Illustrazioni vettoriali e storyboard concettuali.')"
+                    class="group border-b border-gray-200 border-r-0 p-6 flex flex-col justify-between cursor-pointer hover:bg-gray-50 transition-colors duration-200 min-h-[380px]">
+                    <div>
+                        <div
+                            class="w-full aspect-square bg-gray-100 mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="1 anno/Gemini_Generated_Image_vy9qyjvy9qyjvy9q.jpg" alt="Project 16"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h3 class="text-[15px] font-semibold tracking-tight text-black group-hover:underline">Project 24
+                        </h3>
+                        <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Roma città aperta - Trailer</p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-gray-400 mt-6 block">video — 2023</span>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+     PAGINA DETTAGLIO SINGOLO PROGETTO
+====================================================== -->
+
+    <!-- =====================================================
+         PROJECT 01
+    ====================================================== -->
+    <section id="project-01-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.7fr_1.3fr] items-center px-6 md:px-[5%] py-20 md:py-8 gap-8 md:gap-12">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+
+                </button>
+
+                <h1
+                    class="font-antonio text-[clamp(50px,7vw,90px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 01
+                </h1>
+
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">
+                    photographs
+                </p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Reinterpretation of Robert Mapplethorpe’s photographs.
+                </p>
+
+
+            </div>
+
+            <!-- COLONNA DESTRA (CAROSELLO PIÙ GRANDE) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+
+                <!-- CONTENITORE SLIDER AUMENTATO -->
+                <div
+                    class="relative w-full aspect-[16/10] max-h-[75vh] bg-zinc-900 overflow-hidden group rounded-sm shadow-lg">
+
+                    <!-- TRACCIA DELLE IMMAGINI -->
+                    <div id="p1-track" class="flex w-full h-full transition-transform duration-500 ease-out">
+                        <img src="1 anno/1/1.png" alt="Project 01 - 1"
+                            class="w-full h-full object-cover flex-shrink-0 min-w-full">
+                        <img src="1 anno/1/2.png" alt="Project 01 - 2"
+                            class="w-full h-full object-cover flex-shrink-0 min-w-full">
+                        <img src="1 anno/1/3.png" alt="Project 01 - 3"
+                            class="w-full h-full object-cover flex-shrink-0 min-w-full">
+                        <img src="1 anno/1/4.png" alt="Project 01 - 4"
+                            class="w-full h-full object-cover flex-shrink-0 min-w-full">
+                        <img src="1 anno/1/5.png" alt="Project 01 - 5"
+                            class="w-full h-full object-cover flex-shrink-0 min-w-full">
+                        <img src="1 anno/1/6.png" alt="Project 01 - 6"
+                            class="w-full h-full object-cover flex-shrink-0 min-w-full">
+                        <img src="1 anno/1/7.png" alt="Project 01 - 7"
+                            class="w-full h-full object-cover flex-shrink-0 min-w-full">
+                        <img src="1 anno/1/8.png" alt="Project 01 - 8"
+                            class="w-full h-full object-cover flex-shrink-0 min-w-full">
+                    </div>
+
+                    <!-- FRECCIA SINISTRA -->
+                    <button onclick="p1MoveSlide(-1)"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black border border-white/20 text-white p-3 rounded-full transition-all duration-300 cursor-pointer z-10">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- FRECCIA DESTRA -->
+                    <button onclick="p1MoveSlide(1)"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black border border-white/20 text-white p-3 rounded-full transition-all duration-300 cursor-pointer z-10">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- PALLINI INDICATORI (DOTS) -->
+                <div id="p1-dots" class="flex gap-2.5 mt-5">
+                    <button onclick="p1GoToSlide(0)"
+                        class="p1-dot w-2.5 h-2.5 rounded-full bg-white transition-all duration-300 cursor-pointer"></button>
+                    <button onclick="p1GoToSlide(1)"
+                        class="p1-dot w-2.5 h-2.5 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-300 cursor-pointer"></button>
+                    <button onclick="p1GoToSlide(2)"
+                        class="p1-dot w-2.5 h-2.5 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-300 cursor-pointer"></button>
+                    <button onclick="p1GoToSlide(3)"
+                        class="p1-dot w-2.5 h-2.5 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-300 cursor-pointer"></button>
+                    <button onclick="p1GoToSlide(4)"
+                        class="p1-dot w-2.5 h-2.5 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-300 cursor-pointer"></button>
+                    <button onclick="p1GoToSlide(5)"
+                        class="p1-dot w-2.5 h-2.5 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-300 cursor-pointer"></button>
+                    <button onclick="p1GoToSlide(6)"
+                        class="p1-dot w-2.5 h-2.5 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-300 cursor-pointer"></button>
+                    <button onclick="p1GoToSlide(7)"
+                        class="p1-dot w-2.5 h-2.5 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-300 cursor-pointer"></button>
+                </div>
+
+                <p
+                    class="w-full text-center md:text-left mt-4 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    8 photographs.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 02
+    ====================================================== -->
+
+    <section id="project-02-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 02
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">Project for the MUSA exhibition ;Free –
+                    but from what?
+                </p>
+
+
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    is an audiovisual
+                    project that explores female freedom and women's right to fully embrace their bodies and identities.
+                    Through images, sounds and texts, the video addresses stereotypes and cultural pressures,
+                    encouraging reflection on the relationship between the body and society. Presented across eight
+                    black-and-white screens, it alternates between light and darkness, offering no answers but leaving
+                    space for new questions about the meaning of freedom.
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA -->
+
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center">
+
+                    <!-- AGGIUNTO L'ID "video-project-02" -->
+                    <video id="video-project-02" src="2 anno/musa/master intero.mp4"
+                        class="w-full h-full object-contain" controls autoplay loop playsinline>
+                        Il tuo browser non supporta il tag video.
+                    </video>
+
+                </div>
+
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Project for the MUSA exhibition;
+                    8-screen edit on feminism.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 03
+    ====================================================== -->
+
+    <section id="project-03-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 03
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">Code-based project
+                </p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Interactive model based on hand movement
+                    mapping through the device's camera.
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Instructions: activate the device's camera and move your hands
+                    in front of the camera so it can detect and map them.
+                </p>
+            </div>
+
+
+
+
+            <!-- COLONNA DESTRA -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900">
+                    <!-- AGGIUNTO L'ID "project03-iframe" -->
+                    <iframe id="project03-iframe" src="https://sensational-praline-d5ca2d.netlify.app"
+                        class="w-full h-full border-0" allow="camera" allowfullscreen></iframe>
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Interactive model.
+                </p>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 04
+    ====================================================== -->
+
+    <section id="project-04-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 04
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">The three-dimensional sculpture explores
+                    the theme of suicide.
+                </p>
+
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+
+                    The fluid and sinuous forms of the work evoke a palpable sense of anguish and solitude. The twisted
+                    and huddled posture of the body and head adds an additional emotional dimension, powerfully
+                    communicating the complexity of the feelings associated with this deeply meaningful theme.
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+
+                    This 3D sculpture represents an opportunity to explore a subject of extreme emotional and social
+                    relevance in a sensitive and profound way, encouraging a broader reflection on the complexity of the
+                    human condition.
+                </p>
+
+            </div>
+
+
+
+
+
+            <!-- COLONNA DESTRA -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center">
+
+                    <!-- VIDEO CON ID DEDICATO -->
+                    <video id="video-project-04" src="1 anno/2/ok.mp4" class="w-full h-full object-contain" controls
+                        autoplay loop playsinline>
+                        Il tuo browser non supporta il tag video.
+                    </video>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    3d model
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 05
+    ====================================================== -->
+
+    <section id="project-05-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 05
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">re-sound</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    The editing is based on the concept of
+                    "truthful dubbing": it utilizes realistic and authentic sounds, enriched with
+                    environmental and "disturbing" sound effects, maintaining a millimetric synchronization between
+                    audio and image to amplify the emotional journey.
+
+                </p>
+
+
+
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+
+                    It explores childhood memories, nature, and the passage of time through nostalgic videos and aged
+                    locations (such as old family homes or parks), blending the joy of innocence with the melancholy of
+                    time's fleeting nature.
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA (CAROSELLO DI VIDEO) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 relative">
+
+                    <!-- TRACK DEL CAROSELLO -->
+                    <div id="p5-track" class="flex w-[400%] h-full transition-transform duration-500 ease-in-out">
+
+                        <!-- Video 1 -->
+                        <div class="w-1/4 h-full flex items-center justify-center">
+                            <video id="p5-video-0" src="1 anno/3/1) pescatori/1) pescatori.mp4"
+                                class="w-full h-full object-contain" controls autoplay playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="w-1/4 h-full flex items-center justify-center">
+                            <video id="p5-video-1" src="1 anno/3/2) gita/2) gita in macchina.mp4"
+                                class="w-full h-full object-contain" controls playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="w-1/4 h-full flex items-center justify-center">
+                            <video id="p5-video-2" src="1 anno/3/3) picnic/3) picnic.mp4"
+                                class="w-full h-full object-contain" controls playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+                        <!-- Video 4 -->
+                        <div class="w-1/4 h-full flex items-center justify-center">
+                            <video id="p5-video-3" src="1 anno/3/4) giornata in campagna  /4) giornata in campagna.mp4"
+                                class="w-full h-full object-contain" controls playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+
+                    </div>
+
+                    <!-- FRECCE DI NAVIGAZIONE DEL CAROSELLO -->
+                    <button onclick="p5MoveSlide(-1)"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white px-3 py-2 text-xs transition-all z-10 cursor-pointer">❮</button>
+                    <button onclick="p5MoveSlide(1)"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white px-3 py-2 text-xs transition-all z-10 cursor-pointer">❯</button>
+
+                </div>
+
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    4 videos
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 06
+    ====================================================== -->
+
+    <section id="project-06-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 06
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-6">Particles</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    The visual and sound realization takes shape through a well-defined multimedia workflow: 3D modeling
+                    and particle animation were developed in Blender, the creation, processing, and sound design of the
+                    audio tracks were handled in Adobe Audition, while the editing and finalization of the audiovisual
+                    work were completed in Adobe Premiere Pro.
+                </p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mt-4">
+                    The particles represent partisans, units of resistance in a world dominated by darkness and
+                    oppression. Light symbolizes struggle and hope: every movement is an act of resistance that, uniting
+                    with the others, forms an indomitable collective force.
+                </p>
+
+
+
+            </div>
+
+            <!-- COLONNA DESTRA (CAROSELLO DI VIDEO) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 relative">
+
+                    <!-- TRACK DEL CAROSELLO -->
+                    <div id="p6-track" class="flex w-[400%] h-full transition-transform duration-500 ease-in-out">
+
+                        <!-- Video 1 -->
+                        <div class="w-1/4 h-full flex items-center justify-center">
+                            <video id="p6-video-0" src="2 anno/4/1) From Order to Chaos.mp4"
+                                class="w-full h-full object-contain" controls autoplay playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="w-1/4 h-full flex items-center justify-center">
+                            <video id="p6-video-1" src="2 anno/4/2) Last move.mp4" class="w-full h-full object-contain"
+                                controls playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="w-1/4 h-full flex items-center justify-center">
+                            <video id="p6-video-2" src="2 anno/4/3) Symphony.mp4" class="w-full h-full object-contain"
+                                controls playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+                        <!-- Video 4 -->
+                        <div class="w-1/4 h-full flex items-center justify-center">
+                            <video id="p6-video-3" src="2 anno/4/4) Under the Weight of Whispers.mp4"
+                                class="w-full h-full object-contain" controls playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+
+                    </div>
+
+                    <!-- FRECCE DI NAVIGAZIONE DEL CAROSELLO -->
+                    <button onclick="p6MoveSlide(-1)"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 bg-zinc-800 hover:bg-white hover:text-black text-white px-3 py-2 text-xs transition-all z-10 cursor-pointer">❮</button>
+                    <button onclick="p6MoveSlide(1)"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 bg-zinc-800 hover:bg-white hover:text-black text-white px-3 py-2 text-xs transition-all z-10 cursor-pointer">❯</button>
+                </div>
+
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    4 videos
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 07
+    ====================================================== -->
+
+    <section id="project-07-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 07
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">Soundscape</p>
+
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    An immersive and disturbing audio experience that transports the listener inside the shattered mind
+                    of Ted, the sole survivor of the collapse of the artificial intelligence AM. A hopeless tale where
+                    sound is the only language left to bear witness to existence.
+                </p>
+
+
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mt-4">
+
+                    This project draws inspiration from a well-known video game, which in turn was based on the novel of
+                    the same name, with an audio editing completely handled on Adobe Audition.
+                </p>
+            </div>
+
+
+
+
+
+            <!-- COLONNA DESTRA -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+
+                <!-- Player Audio (visibile e controllato dall'utente) -->
+                <div class="w-full bg-zinc-900 p-4 border border-zinc-800">
+                    <audio controls class="w-full">
+                        <source src="2 anno/5/i have no mouth and i must scream.wav" type="audio/mpeg">
+                        Il tuo browser non supporta il tag audio.
+                    </audio>
+                </div>
+
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Audio.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 08
+    ====================================================== -->
+
+
+    <section id="project-08-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 08
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-6">Code-based project</p>
+
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Use your device's webcam to track movement and render the detected figure using Matrix-style
+                    characters. The sound of water droplets in the ocean is synthetically generated via the Web Audio
+                    API (without the need for external audio files). The frequency of the droplets varies dynamically
+                    based on the amount of body movement.
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA (IFRAME INTERATTIVO CON WEBCAM) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 border border-zinc-800">
+                    <!-- Lasciamo l'src vuoto o "about:blank" inizialmente -->
+                    <iframe id="project08-iframe" src="about:blank" class="w-full h-full border-0"
+                        allow="camera; microphone; autoplay"></iframe>
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Interactive model.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 09
+    ====================================================== -->
+
+    <section id="project-09-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 09
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">Video</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Atychiphobia - the fear of failure.
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center">
+
+                    <video id="video-project-09" src="3° anno/styrangis /fallimento.mp4"
+                        class="w-full h-full object-contain" controls autoplay loop playsinline>
+                        Il tuo browser non supporta il tag video.
+                    </video>
+
+                </div>
+
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Video.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 10
+    ====================================================== -->
+
+    <section id="project-10-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 10
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">Editorial Design</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Menabo editorial layout.
+                </p>
+
+                <!-- INDICATORE DEL NUMERO DI PAGINA -->
+                <span id="p10-page-info" class="text-[12px] tracking-[1px] text-gray-300 font-light">
+                    Page 1 / -
+                </span>
+            </div>
+
+            <!-- COLONNA DESTRA (VISUALIZZATORE PDF CON FRECCE AI LATI) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center relative shadow-2xl group">
+
+                    <!-- Canvas del PDF -->
+                    <canvas id="p10-pdf-canvas" class="w-full h-full object-contain"></canvas>
+
+                    <!-- FRECCIA SINISTRA (PREV) -->
+                    <button onclick="p10PrevPage()"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        ←
+                    </button>
+
+                    <!-- FRECCIA DESTRA (NEXT) -->
+                    <button onclick="p10NextPage()"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        →
+                    </button>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Menabo
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 11
+    ====================================================== -->
+    <!-- =====================================================
+         PROJECT 11
+    ====================================================== -->
+
+    <section id="project-11-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 11
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">design</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Design and creation of a handmade object.
+                </p>
+
+                <!-- INDICATORE DEL NUMERO DI PAGINA -->
+                <span id="p11-page-info" class="text-[12px] tracking-[1px] text-gray-300 font-light">
+                    Page 1 / -
+                </span>
+            </div>
+
+            <!-- COLONNA DESTRA (VISUALIZZATORE PDF CON FRECCE AI LATI) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center relative shadow-2xl group">
+
+                    <!-- Canvas del PDF per il Project 11 -->
+                    <canvas id="p11-pdf-canvas" class="w-full h-full object-contain"></canvas>
+
+                    <!-- FRECCIA SINISTRA (PREV) -->
+                    <button onclick="p11PrevPage()"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        ←
+                    </button>
+
+                    <!-- FRECCIA DESTRA (NEXT) -->
+                    <button onclick="p11NextPage()"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        →
+                    </button>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Presentation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 12
+    ====================================================== -->
+
+    <!-- =====================================================
+         PROJECT 12
+    ====================================================== -->
+
+    <section id="project-12-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 12
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">Body modification - Edited and sound
+                    design</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Body modification as a subversive practice: rejecting standardized beauty norms through transforming
+                    the body 'for the worse' in performance art.
+                </p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    The body is no longer viewed as a temple to idealize or a surface to conform to societal standards,
+                    but rather as a political territory, living matter, and a tool for radical protest. Through extreme
+                    modification and performance art, the body is deliberately stripped of consumerist aesthetics and
+                    polished perfection, becoming a vehicle for unease and uncomfortable truths.
+                </p>
+
+
+
+            </div>
+
+            <!-- COLONNA DESTRA (VIDEO) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center">
+
+                    <!-- TAG VIDEO CON ID DEDICATO (uguale al Project 02) -->
+                    <video id="video-project-12" src="3° anno/14) RADICAL ERROR.mp4"
+                        class="w-full h-full object-contain" controls autoplay loop playsinline>
+                        Il tuo browser non supporta il tag video.
+                    </video>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Video.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 13
+    ====================================================== -->
+
+    <!-- =====================================================
+         PROJECT 13 (O IL NUMERO CHE PREFERISCI)
+    ====================================================== -->
+
+    <section id="project-13-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 13
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">Split screen</p>
+
+
+            </div>
+
+            <!-- COLONNA DESTRA (CAROSELLO DI 3 VIDEO) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 relative">
+
+                    <!-- TRACK DEL CAROSELLO (Larghezza 300% perché sono 3 slide) -->
+                    <div id="p13-track" class="flex w-[300%] h-full transition-transform duration-500 ease-in-out">
+
+                        <!-- Video 1 -->
+                        <div class="w-1/3 h-full flex items-center justify-center">
+                            <video id="p13-video-0" src="2 anno/7/MASTER.mp4" class="w-full h-full object-contain"
+                                controls autoplay playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="w-1/3 h-full flex items-center justify-center">
+                            <video id="p13-video-1" src="2 anno/7/2023_10_30_MANRAY_COVIELLO_WIP_V01_1.mov"
+                                class="w-full h-full object-contain" controls playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="w-1/3 h-full flex items-center justify-center">
+                            <video id="p13-video-2" src="2 anno/7/me-you.mp4" class="w-full h-full object-contain"
+                                controls playsinline preload="auto">
+                                Il tuo browser non supporta il tag video.
+                            </video>
+                        </div>
+
+                    </div>
+
+                    <!-- FRECCE DI NAVIGAZIONE DEL CAROSELLO -->
+                    <button onclick="p13MoveSlide(-1)"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white px-3 py-2 text-xs transition-all z-10 cursor-pointer">❮</button>
+                    <button onclick="p13MoveSlide(1)"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white px-3 py-2 text-xs transition-all z-10 cursor-pointer">❯</button>
+
+                </div>
+
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    3 videos
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 14
+    ====================================================== -->
+
+    <!-- =====================================================
+         PROJECT 14
+    ====================================================== -->
+
+    <section id="project-14-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 14
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">Interactive experience, responsive layout.
+                </p>
+
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    The work explores and makes tangible the concept of the four dimensions through a computer vision
+                    system based on hand-tracking via the device's camera.
+                </p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    The audience interacts with the installation by configuring their hands into specific gestures,
+                    which directly act upon the spatiotemporal parameters of the experience:
+                    A open hand activates and defines depth.
+                    A closed fist and an open hand regulate width.
+                    Two open hands control height.
+                    A closed fist acts as a stop command, freezing the fourth dimension (time).
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA (Con Iframe Netlify) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900">
+                    <iframe id="project14-iframe" src="https://darling-kelpie-a18ef3.netlify.app"
+                        class="w-full h-full border-0" allow="camera; microphone">
+                    </iframe>
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Interactive model.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 15
+    ====================================================== -->
+
+    <section id="project-15-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-4 text-white">
+                    PROJECT 15
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-8">gif, Infinite Circle</p>
+
+                <!-- Descrizione -->
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    It is an hypnotic visual artwork that explores the symbolism of elementary geometry, placing the
+                    circle at its core and contrasting formal perfection with provocative, cutting phrases.
+                </p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Through fluid variations in scale, color, and perspective, the circle unfolds in a continuous loop
+                    that evokes absolute cyclicity, wrapping the viewer in a vortex of pure aesthetic ecstasy.
+                </p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Leveraging digital animation and immersive projections, the installation blends light, synchronized
+                    movement, and contrasting texts to suspend the perception of space and time, plunging the audience
+                    into the infinite essence of the form.
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA CON CAROSELLO DI 4 GIF -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+
+                <!-- Contenitore principale del carosello -->
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 relative group">
+
+                    <!-- Track che si muove orizzontalmente -->
+                    <div id="p15-track" class="flex w-[400%] h-full transition-transform duration-500 ease-out">
+
+                        <!-- Slide 1 -->
+                        <div class="w-1/4 h-full flex-shrink-0 flex items-center justify-center overflow-hidden">
+                            <div id="p15-container-0" class="w-full h-full"
+                                data-src="1 anno/2) gifs/gif2_coviello giulia.gif"></div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="w-1/4 h-full flex-shrink-0 flex items-center justify-center overflow-hidden">
+                            <div id="p15-container-1" class="w-full h-full"
+                                data-src="1 anno/2) gifs/gif1_coviello giulia.gif"></div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="w-1/4 h-full flex-shrink-0 flex items-center justify-center overflow-hidden">
+                            <div id="p15-container-2" class="w-full h-full"
+                                data-src="1 anno/2) gifs/gif3_coviello giulia.gif"></div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="w-1/4 h-full flex-shrink-0 flex items-center justify-center overflow-hidden">
+                            <div id="p15-container-3" class="w-full h-full"
+                                data-src="1 anno/2) gifs/gif4_giulia coviello.gif"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Frecce di navigazione -->
+                    <button onclick="p15MoveSlide(-1)"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-white hover:text-black text-white w-9 h-9 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 cursor-pointer z-10">
+                        &#10094;
+                    </button>
+                    <button onclick="p15MoveSlide(1)"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-white hover:text-black text-white w-9 h-9 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 cursor-pointer z-10">
+                        &#10095;
+                    </button>
+
+                    <!-- Indicatori (pallini in basso) -->
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                        <button onclick="p15GoToSlide(0)"
+                            class="p15-dot w-4 h-2 rounded-full bg-white transition-all cursor-pointer"></button>
+                        <button onclick="p15GoToSlide(1)"
+                            class="p15-dot w-2 h-2 rounded-full bg-white/40 transition-all cursor-pointer"></button>
+                        <button onclick="p15GoToSlide(2)"
+                            class="p15-dot w-2 h-2 rounded-full bg-white/40 transition-all cursor-pointer"></button>
+                        <button onclick="p15GoToSlide(3)"
+                            class="p15-dot w-2 h-2 rounded-full bg-white/40 transition-all cursor-pointer"></button>
+                    </div>
+
+                </div>
+
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    4 Animation loop
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 16
+    ====================================================== -->
+
+    <!-- =====================================================
+         PROJECT 16
+    ====================================================== -->
+
+    <section id="project-16-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 16
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">video</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Video about consumerism.
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA (VIDEO) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center">
+
+                    <!-- TAG VIDEO SENZA AUTOPLAY -->
+                    <video id="video-project-16" src="3° anno/styrangis /consumismo .mp4"
+                        class="w-full h-full object-contain" controls loop playsinline>
+                        Il tuo browser non supporta il tag video.
+                    </video>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Video.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 17
+    ====================================================== -->
+
+    <!-- =====================================================
+         PROJECT 17
+    ====================================================== -->
+
+    <section id="project-17-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 17
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">Design</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Object analysis and redesign for upcycling.
+                </p>
+
+                <!-- INDICATORE DEL NUMERO DI PAGINA -->
+                <span id="p17-page-info" class="text-[12px] tracking-[1px] text-gray-300 font-light">
+                    Page 1 / -
+                </span>
+            </div>
+
+            <!-- COLONNA DESTRA (VISUALIZZATORE PDF CON FRECCE AI LATI) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center relative shadow-2xl group">
+
+                    <!-- Canvas del PDF -->
+                    <canvas id="p17-pdf-canvas" class="w-full h-full object-contain"></canvas>
+
+                    <!-- FRECCIA SINISTRA (PREV) -->
+                    <button onclick="p17PrevPage()"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        ←
+                    </button>
+
+                    <!-- FRECCIA DESTRA (NEXT) -->
+                    <button onclick="p17NextPage()"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        →
+                    </button>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Design.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 18
+    ====================================================== -->
+
+    <!-- =====================================================
+         PROJECT 18
+    ====================================================== -->
+
+    <section id="project-18-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 18
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">video</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Video editing based on an audio track provided by the professor, based on a Charlie Chaplin
+                    monologue.
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA (VIDEO) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center">
+
+                    <!-- TAG VIDEO CON CONTROLLI -->
+                    <video id="video-project-18" src="2 anno/6/Sequenza 01.mp4" class="w-full h-full object-contain"
+                        controls loop playsinline>
+                        Il tuo browser non supporta il tag video.
+                    </video>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Video.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 19
+    ====================================================== -->
+
+    <section id="project-19-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 19
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">video</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Video editing project structured around the theme of evolution assigned by the professor, utilizing
+                    a custom soundtrack also provided by him.
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA (VIDEO) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center">
+
+                    <!-- TAG VIDEO CON CONTROLLI -->
+                    <video id="video-project-19" src="2 anno/6/evolution.mp4" class="w-full h-full object-contain"
+                        controls loop playsinline>
+                        Il tuo browser non supporta il tag video.
+                    </video>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Video.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 20
+    ====================================================== -->
+
+    <!-- =====================================================
+         PROJECT 20
+    ====================================================== -->
+
+    <section id="project-20-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 20
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">Design</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Design project on the use of mycelium in a dystopian world.
+                </p>
+
+                <!-- INDICATORE DEL NUMERO DI PAGINA -->
+                <span id="p20-page-info" class="text-[12px] tracking-[1px] text-gray-300 font-light">
+                    Page 1 / -
+                </span>
+            </div>
+
+            <!-- COLONNA DESTRA (VISUALIZZATORE PDF CON FRECCE AI LATI) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center relative shadow-2xl group">
+
+                    <!-- Canvas del PDF -->
+                    <canvas id="p20-pdf-canvas" class="w-full h-full object-contain"></canvas>
+
+                    <!-- FRECCIA SINISTRA (PREV) -->
+                    <button onclick="p20PrevPage()"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        ←
+                    </button>
+
+                    <!-- FRECCIA DESTRA (NEXT) -->
+                    <button onclick="p20NextPage()"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        →
+                    </button>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Design.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 21
+    ====================================================== -->
+
+    <section id="project-21-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 21
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">Blender</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Digital sculpture created using Blender.
+                </p>
+
+                <!-- INDICATORE DELLE IMMAGINI DEL CAROSELLO -->
+                <span id="p21-carousel-info" class="text-[12px] tracking-[1px] text-gray-300 font-light">
+                    Image 1 / 2
+                </span>
+            </div>
+
+            <!-- COLONNA DESTRA (CAROSELLO DI 2 IMMAGINI CON FRECCE AI LATI) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div
+                    class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center relative shadow-2xl group">
+
+                    <!-- Immagine 1 (Visibile inizialmente) -->
+                    <img id="p21-img-1" src="3° anno/3d/4) GATE OF LIGHT.jpg" alt="Blender Sculpture 1"
+                        class="w-full h-full object-cover transition-opacity duration-300">
+
+                    <!-- Immagine 2 (Nascosta inizialmente) -->
+                    <img id="p21-img-2" src="3° anno/3d/untitled.png" alt="Blender Sculpture 2"
+                        class="w-full h-full object-cover transition-opacity duration-300 hidden">
+
+                    <!-- FRECCIA SINISTRA (PREV) -->
+                    <button onclick="p21PrevImage()"
+                        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        ←
+                    </button>
+
+                    <!-- FRECCIA DESTRA (NEXT) -->
+                    <button onclick="p21NextImage()"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white hover:text-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-sm border border-white/20 z-10">
+                        →
+                    </button>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Blender.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 22
+    ====================================================== -->
+
+    <section id="project-22-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 22
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">ai-generated photographs</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    AI allows us to generate convincing yet entirely fictional images from a prompt. Through a series of
+                    fake photographs depicting scientific events, the artist invites us to reflect on two key questions:
+                    the trust we place in images and our openness to new creative horizons. Technology offers
+                    extraordinary tools, but ethical and responsible use remains essential.
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA (CAROSELLO 5 FOTO) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+
+                <!-- Contenitore Immagini con Frecce -->
+                <div class="relative w-full aspect-[4/3] overflow-hidden bg-zinc-900 group">
+
+                    <!-- Slide 1 -->
+                    <div
+                        class="carousel-slide-22 absolute inset-0 transition-opacity duration-500 opacity-100 flex items-center justify-center">
+                        <img src="1 anno/rx/ok/1.png" alt="AI Photograph 1" class="w-full h-full object-contain">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div
+                        class="carousel-slide-22 absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none flex items-center justify-center">
+                        <img src="1 anno/rx/ok/2.png" alt="AI Photograph 2" class="w-full h-full object-contain">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div
+                        class="carousel-slide-22 absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none flex items-center justify-center">
+                        <img src="1 anno/rx/ok/3.png" alt="AI Photograph 3" class="w-full h-full object-contain">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div
+                        class="carousel-slide-22 absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none flex items-center justify-center">
+                        <img src="1 anno/rx/ok/4.png" alt="AI Photograph 4" class="w-full h-full object-contain">
+                    </div>
+                    <!-- Slide 5 -->
+                    <div
+                        class="carousel-slide-22 absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none flex items-center justify-center">
+                        <img src="1 anno/rx/ok/5.png" alt="AI Photograph 5" class="w-full h-full object-contain">
+                    </div>
+
+                    <!-- Pulsanti Freccia Navigazione -->
+                    <button onclick="changeSlide22(-1)"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white w-10 h-10 flex items-center justify-center border border-white/20 hover:border-white transition-all duration-300 cursor-pointer z-10">
+                        ❮
+                    </button>
+                    <button onclick="changeSlide22(1)"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white w-10 h-10 flex items-center justify-center border border-white/20 hover:border-white transition-all duration-300 cursor-pointer z-10">
+                        ❯
+                    </button>
+                </div>
+
+                <!-- Didascalia e Contatore -->
+                <div
+                    class="w-full flex justify-between items-center mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    <p>5 photographs</p>
+                    <p id="carousel-counter-22" class="uppercase tracking-[1px]">1 / 5</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 23
+    ====================================================== -->
+
+    <section id="project-23-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 23
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300">SEdesign.</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Logo design for a design exhibition "SEdesign" focused on recycling and conviviality.
+                </p>
+
+            </div>
+
+            <!-- COLONNA DESTRA (INQUADRATURA VERTICALE E IMMAGINE INTERA) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div
+                    class="w-full max-w-[450px] aspect-[3/4] overflow-hidden bg-zinc-900 flex items-center justify-center p-2">
+                    <img src="3° anno/13) DESIGN/Logo.png" alt="Project 23" class="w-full h-full object-contain">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PROJECT 24
+    ====================================================== -->
+
+    <section id="project-24-page" class="hidden fixed inset-0 w-full h-screen overflow-y-auto bg-black text-white z-50">
+
+        <div
+            class="min-h-screen w-full grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] items-center px-7 md:px-[7.5%] py-24 md:py-10 gap-12 md:gap-16">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="flex flex-col justify-center items-start order-2 md:order-1">
+                <button onclick="showPage('work-page')"
+                    class="border border-white text-white px-5 py-[9px] text-[10px] tracking-[1px] uppercase hover:bg-white hover:text-black transition-all duration-300 cursor-pointer mb-8">
+                    ← BACK TO PROJECTS
+                </button>
+                <h1
+                    class="font-antonio text-[clamp(55px,8vw,100px)] font-bold uppercase leading-[0.85] tracking-[-0.05em] max-w-full break-words mb-6 text-white">
+                    PROJECT 24
+                </h1>
+                <p class="text-[11px] uppercase tracking-[2px] text-gray-300 mb-4">trailer</p>
+
+                <p class="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light mb-4">
+                    Editing a new trailer for Roma, citta aperta a film by Rossellini, Italian neorealist director..
+                </p>
+            </div>
+
+            <!-- COLONNA DESTRA (VIDEO) -->
+            <div class="flex flex-col justify-center items-center order-1 md:order-2 w-full">
+                <div class="w-full aspect-[4/3] overflow-hidden bg-zinc-900 flex items-center justify-center">
+
+                    <!-- TAG VIDEO CON CONTROLLI -->
+                    <video id="video-project-24" src="1 anno/trailer.mp4" class="w-full h-full object-contain" controls
+                        loop playsinline>
+                        Il tuo browser non supporta il tag video.
+                    </video>
+
+                </div>
+                <p class="w-full mt-6 text-[12px] md:text-[13px] leading-[1.8] text-gray-400 font-light">
+                    Video.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         CONTACTS
+    ====================================================== -->
+
+    <section id="contact-page" class="hidden relative w-full h-screen overflow-hidden
+               bg-[#111111] text-white font-sans">
+
+
+        <!-- FOTO DI SFONDO -->
+
+        <div class="absolute -inset-[15px] bg-cover bg-center
+                    blur-[0px] scale-[1.00] z-0" style="background-image: url('Code_Generated_Image.png');">
+        </div>
+
+
+
+        <!-- SFUMATURA SCURA -->
+
+        <div class="absolute inset-0 z-[1]" style="background: linear-gradient(
+                to right,
+                rgba(0,0,0,0.85) 0%,
+                rgba(0,0,0,0.55) 25%,
+                rgba(0,0,0,0.08) 65%,
+                transparent 100%
+             );">
+        </div>
+
+
+
+        <!-- =====================================================
+             MENU CONTACTS
+             UGUALE A QUELLO DELLA HOME
+        ====================================================== -->
+
+        <header class="absolute top-[15px] left-5 right-5
+                       flex justify-between items-center z-10">
+
+            <a href="#" onclick="showPage('home-page'); return false;" class="text-white no-underline text-[13px]
+                      tracking-[1px] hover:opacity-50
+                      transition-opacity">
+
+                HOME PAGE
+                <p>← </p>
+
+            </a>
+
+
+            <nav class="flex gap-[35px]">
+
+                <a href="#" onclick="showPage('who-page'); return false;" class="text-white no-underline text-[13px]
+                          tracking-[0.5px] hover:opacity-50
+                          transition-opacity">
+
+                    WHO AM I
+
+                </a>
+
+
+                <a href="#" onclick="showPage('work-page'); return false;" class="text-white no-underline text-[13px]
+                          tracking-[0.5px] hover:opacity-50
+                          transition-opacity">
+
+                    WORKS
+
+                </a>
+
+
+                <a href="#" onclick="showPage('contact-page'); return false;" class="text-white no-underline text-[13px]
+                          tracking-[0.5px] hover:opacity-50
+                          transition-opacity">
+
+                    CONTACTS
+
+                </a>
+
+            </nav>
+
+        </header>
+
+
+
+
+        <!-- =====================================================
+             CONTENUTI A SINISTRA
+        ====================================================== -->
+
+        <main class="absolute top-[43%] left-[26px]
+                     -translate-y-[20%] z-[3]
+                     text-[13px] leading-[1.3]">
+
+
+            <!-- CONTACT -->
+
+            <p class="mb-[15px]">
+                Contact
+            </p>
+
+
+            <div class="flex flex-col gap-[1px]">
+
+                <p> coviellogiulia55@gmail.com </p>
+
+
+                <p> + 39 3486016777 </p>
+
+                <p> Prato - Italy </p>
+
+            </div>
+
+
+
+            <!-- INFORMATION -->
+
+            <div class="mt-[45px] mb-[15px]">
+
+                <p class="mb-[15px]">
+                    Information Skils
+                </p>
+
+
+                <div class="flex flex-col gap-[1px]">
+
+                    <p>Adobe Photoshop</p>
+
+                    <p>Adobe Illustrator</p>
+
+                    <p>Adobe InDesign</p>
+
+                    <p>Adobe Premiere Pro</p>
+
+                    <p>Adobe Premiere Pro</p>
+                    <p>Adobe After Effects</p>
+                    <p>Adobe Animate</p>
+                    <p>Adobe Audition</p>
+                    <p>Antigravity</p>
+                    <p>Blender</p>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <!-- INFORMAZIONI FINALI -->
+
+            <div class="mt-[90px] mb-5">
+
+                <p>Giulia Coviello</p>
+
+                <p>16 / 04 / 2004</p>
+
+                <p>Prato, Italy</p>
+
+                <p>Portfolio 2026</p>
+
+            </div>
+
+
+        </main>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+
+
+        // =====================================================
+        // PROJECT 21 - CAROSELLO
+        // =====================================================
+
+        let p21CurrentIndex = 1;
+        const p21TotalImages = 2;
+
+        function p21UpdateCarousel() {
+            const img1 = document.getElementById('p21-img-1');
+            const img2 = document.getElementById('p21-img-2');
+            const info = document.getElementById('p21-carousel-info');
+
+            if (p21CurrentIndex === 1) {
+                img1.classList.remove('hidden');
+                img2.classList.add('hidden');
+            } else {
+                img1.classList.add('hidden');
+                img2.classList.remove('hidden');
+            }
+
+            if (info) {
+                info.innerText = `Image ${p21CurrentIndex} / ${p21TotalImages}`;
+            }
+        }
+
+        function p21NextImage() {
+            p21CurrentIndex = p21CurrentIndex >= p21TotalImages ? 1 : p21CurrentIndex + 1;
+            p21UpdateCarousel();
+        }
+
+        function p21PrevImage() {
+            p21CurrentIndex = p21CurrentIndex <= 1 ? p21TotalImages : p21CurrentIndex - 1;
+            p21UpdateCarousel();
+        }
+
+        // =====================================================
+        // PROJECT 01 - CAROSELLO
+        // =====================================================
+
+        let p1CurrentIndex = 0;
+        const p1TotalSlides = 8;
+
+
+        function p1UpdateCarousel() {
+
+            const track =
+                document.getElementById(
+                    "p1-track"
+                );
+
+
+            const dots =
+                document.querySelectorAll(
+                    "#p1-dots .p1-dot"
+                );
+
+
+            if (track) {
+
+                track.style.transform =
+                    `translateX(-${p1CurrentIndex * 100}%)`;
+            }
+
+
+            dots.forEach(
+                (dot, index) => {
+
+                    if (
+                        index === p1CurrentIndex
+                    ) {
+
+                        dot.classList.remove(
+                            "bg-gray-300"
+                        );
+
+                        dot.classList.add(
+                            "bg-black"
+                        );
+
+                    } else {
+
+                        dot.classList.remove(
+                            "bg-black"
+                        );
+
+                        dot.classList.add(
+                            "bg-gray-300"
+                        );
+                    }
+
+                }
+            );
+        }
+
+
+        function p1MoveSlide(step) {
+
+            p1CurrentIndex =
+                (
+                    p1CurrentIndex +
+                    step +
+                    p1TotalSlides
+                ) % p1TotalSlides;
+
+            p1UpdateCarousel();
+        }
+
+
+        function p1GoToSlide(index) {
+
+            p1CurrentIndex = index;
+
+            p1UpdateCarousel();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // =====================================================
+        // PROJECT 022 - CAROSELLO VIDEO
+        // =====================================================
+
+
+        let currentSlide22 = 0;
+        const totalSlides22 = 5;
+
+        function changeSlide22(direction) {
+            const slides = document.querySelectorAll('.carousel-slide-22');
+            const counter = document.getElementById('carousel-counter-22');
+
+            if (!slides.length) return;
+
+            // Rimuovi la slide corrente
+            slides[currentSlide22].classList.remove('opacity-100');
+            slides[currentSlide22].classList.add('opacity-0', 'pointer-events-none');
+
+            // Calcola il nuovo indice (con ciclo infinito)
+            currentSlide22 = (currentSlide22 + direction + totalSlides22) % totalSlides22;
+
+            // Mostra la nuova slide
+            slides[currentSlide22].classList.remove('opacity-0', 'pointer-events-none');
+            slides[currentSlide22].classList.add('opacity-100');
+
+            // Aggiorna il contatore testuale
+            if (counter) {
+                counter.textContent = `${currentSlide22 + 1} / ${totalSlides22}`;
+            }
+        }
+
+
+        // =====================================================
+        // PROJECT 05 - CAROSELLO VIDEO
+        // =====================================================
+
+        let p5CurrentIndex = 0;
+        const p5TotalSlides = 4;
+
+        function p5StopAllVideos() {
+
+            for (let i = 0; i < p5TotalSlides; i++) {
+
+                const v = document.getElementById("p5-video-" + i);
+
+                if (v) {
+                    v.pause();
+                    v.currentTime = 0;
+                }
+
+            }
+        }
+
+
+        function p5UpdateCarousel() {
+
+            p5StopAllVideos();
+
+            const track = document.getElementById("p5-track");
+
+            if (track) {
+
+                const movePercentage =
+                    p5CurrentIndex * (100 / p5TotalSlides);
+
+                track.style.transform =
+                    `translateX(-${movePercentage}%)`;
+            }
+
+
+            const activeVideo =
+                document.getElementById(
+                    "p5-video-" + p5CurrentIndex
+                );
+
+            if (activeVideo) {
+
+                activeVideo
+                    .play()
+                    .catch(e =>
+                        console.log("Autoplay bloccato dal browser")
+                    );
+            }
+        }
+
+
+        function p5MoveSlide(step) {
+
+            p5CurrentIndex =
+                (p5CurrentIndex + step + p5TotalSlides)
+                % p5TotalSlides;
+
+            p5UpdateCarousel();
+        }
+
+
+
+        // =====================================================
+        // PROJECT 06 - CAROSELLO VIDEO
+        // =====================================================
+
+        let p6CurrentIndex = 0;
+        const p6TotalSlides = 4;
+
+
+        function p6StopAllVideos() {
+
+            for (let i = 0; i < p6TotalSlides; i++) {
+
+                const v =
+                    document.getElementById("p6-video-" + i);
+
+                if (v) {
+                    v.pause();
+                    v.currentTime = 0;
+                }
+            }
+        }
+
+
+        function p6UpdateCarousel() {
+
+            p6StopAllVideos();
+
+            const track =
+                document.getElementById("p6-track");
+
+            if (track) {
+
+                const movePercentage =
+                    p6CurrentIndex * (100 / p6TotalSlides);
+
+                track.style.transform =
+                    `translateX(-${movePercentage}%)`;
+            }
+
+
+            const activeVideo =
+                document.getElementById(
+                    "p6-video-" + p6CurrentIndex
+                );
+
+            if (activeVideo) {
+
+                activeVideo
+                    .play()
+                    .catch(e =>
+                        console.log("Autoplay bloccato dal browser")
+                    );
+            }
+        }
+
+
+        function p6MoveSlide(step) {
+
+            p6CurrentIndex =
+                (p6CurrentIndex + step + p6TotalSlides)
+                % p6TotalSlides;
+
+            p6UpdateCarousel();
+        }
+
+
+
+        // =====================================================
+        // PROJECT 13 - CAROSELLO 3 VIDEO
+        // =====================================================
+
+        let p13CurrentIndex = 0;
+        const p13TotalSlides = 3;
+
+
+        function p13StopAllVideos() {
+
+            for (let i = 0; i < p13TotalSlides; i++) {
+
+                const v =
+                    document.getElementById("p13-video-" + i);
+
+                if (v) {
+                    v.pause();
+                    v.currentTime = 0;
+                }
+            }
+        }
+
+
+        function p13UpdateCarousel() {
+
+            p13StopAllVideos();
+
+            const track =
+                document.getElementById("p13-track");
+
+            if (track) {
+
+                const movePercentage =
+                    p13CurrentIndex * (100 / p13TotalSlides);
+
+                track.style.transform =
+                    `translateX(-${movePercentage}%)`;
+            }
+
+
+            const activeVideo =
+                document.getElementById(
+                    "p13-video-" + p13CurrentIndex
+                );
+
+            if (activeVideo) {
+
+                activeVideo
+                    .play()
+                    .catch(e =>
+                        console.log("Autoplay bloccato dal browser")
+                    );
+            }
+        }
+
+
+        function p13MoveSlide(step) {
+
+            p13CurrentIndex =
+                (p13CurrentIndex + step + p13TotalSlides)
+                % p13TotalSlides;
+
+            p13UpdateCarousel();
+        }
+
+
+
+        // =====================================================
+        // PROJECT 15 - CAROSELLO 4 GIF (CON LOOP FORZATO)
+        // =====================================================
+
+        let p15CurrentIndex = 0;
+        const p15TotalSlides = 4;
+
+        function p15InitGifs() {
+            for (let i = 0; i < p15TotalSlides; i++) {
+                const container = document.getElementById('p15-container-' + i);
+                if (container && container.children.length === 0) {
+                    const src = container.getAttribute('data-src');
+                    if (src) {
+                        const img = document.createElement('img');
+                        img.src = src;
+                        img.alt = "Project 15 GIF " + (i + 1);
+                        img.className = "w-full h-full object-cover";
+                        container.appendChild(img);
+                    }
+                }
+            }
+        }
+
+        function p15UpdateCarousel() {
+            p15InitGifs();
+
+            const track = document.getElementById('p15-track');
+            if (track) {
+                const movePercentage = p15CurrentIndex * (100 / p15TotalSlides);
+                track.style.transform = `translateX(-${movePercentage}%)`;
+            }
+
+            const dots = document.querySelectorAll('.p15-dot');
+            dots.forEach((dot, index) => {
+                if (index === p15CurrentIndex) {
+                    dot.classList.remove('bg-white/40', 'w-2');
+                    dot.classList.add('bg-white', 'w-4');
+                } else {
+                    dot.classList.remove('bg-white', 'w-4');
+                    dot.classList.add('bg-white/40', 'w-2');
+                }
+            });
+
+            const container = document.getElementById('p15-container-' + p15CurrentIndex);
+            if (container) {
+                const img = container.querySelector('img');
+                if (img) {
+                    const currentSrc = container.getAttribute('data-src');
+                    img.src = '';
+                    setTimeout(() => {
+                        img.src = currentSrc;
+                    }, 10);
+                }
+            }
+        }
+
+        function p15MoveSlide(step) {
+            p15CurrentIndex = (p15CurrentIndex + step + p15TotalSlides) % p15TotalSlides;
+            p15UpdateCarousel();
+        }
+
+        function p15GoToSlide(index) {
+            p15CurrentIndex = index;
+            p15UpdateCarousel();
+        }
+
+
+
+
+
+
+
+
+
+        // =====================================================
+        // PROJECT 20 - GESTIONE PDF
+        // =====================================================
+
+        let p20Doc = null;
+        let p20NumPages = 0;
+        let p20CurrentPage = 1;
+        let p20IsRendering = false;
+        let p20PendingPage = null;
+
+        // Modifica con il percorso corretto del tuo PDF per il Project 20
+        const p20PdfUrl = "3° anno/13) DESIGN/Micelio.pdf";
+
+
+        function p20RenderPage(num) {
+
+            if (!p20Doc) return;
+
+            p20IsRendering = true;
+
+            p20Doc.getPage(num).then(function (page) {
+
+                const canvas = document.getElementById("p20-pdf-canvas");
+
+                if (!canvas) {
+                    p20IsRendering = false;
+                    return;
+                }
+
+                const ctx = canvas.getContext("2d");
+                const viewport = page.getViewport({ scale: 1.5 });
+
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+
+                const renderTask = page.render(renderContext);
+
+                renderTask.promise.then(function () {
+
+                    p20IsRendering = false;
+
+                    if (p20PendingPage !== null) {
+                        p20RenderPage(p20PendingPage);
+                        p20PendingPage = null;
+                    }
+
+                });
+
+            });
+
+            const infoEl = document.getElementById("p20-page-info");
+
+            if (infoEl) {
+                infoEl.innerText = `Page ${num} / ${p20NumPages}`;
+            }
+        }
+
+
+        function p20QueueRenderPage(num) {
+            if (p20IsRendering) {
+                p20PendingPage = num;
+            } else {
+                p20RenderPage(num);
+            }
+        }
+
+
+        function p20PrevPage() {
+            if (p20CurrentPage <= 1) return;
+            p20CurrentPage--;
+            p20QueueRenderPage(p20CurrentPage);
+        }
+
+
+        function p20NextPage() {
+            if (p20CurrentPage >= p20NumPages) return;
+            p20CurrentPage++;
+            p20QueueRenderPage(p20CurrentPage);
+        }
+
+
+        function initProject20Pdf() {
+            if (!p20Doc) {
+                pdfjsLib
+                    .getDocument(p20PdfUrl)
+                    .promise
+                    .then(function (pdfDoc_) {
+                        p20Doc = pdfDoc_;
+                        p20NumPages = p20Doc.numPages;
+                        p20CurrentPage = 1;
+                        p20RenderPage(p20CurrentPage);
+                    })
+                    .catch(function (error) {
+                        console.error("Errore nel caricamento del PDF Project 20:", error);
+                    });
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        // =====================================================
+        // PROJECT 10 - GESTIONE PDF
+        // =====================================================
+
+        let p10Doc = null;
+        let p10NumPages = 0;
+        let p10CurrentPage = 1;
+        let p10IsRendering = false;
+        let p10PendingPage = null;
+
+        const p10PdfUrl = "3° anno/18) MENABO.pdf";
+
+
+        function p10RenderPage(num) {
+
+            if (!p10Doc) return;
+
+            p10IsRendering = true;
+
+            p10Doc.getPage(num).then(function (page) {
+
+                const canvas = document.getElementById("p10-pdf-canvas");
+
+                if (!canvas) {
+                    p10IsRendering = false;
+                    return;
+                }
+
+                const ctx = canvas.getContext("2d");
+                const viewport = page.getViewport({ scale: 1.5 });
+
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+
+                const renderTask = page.render(renderContext);
+
+                renderTask.promise.then(function () {
+
+                    p10IsRendering = false;
+
+                    if (p10PendingPage !== null) {
+                        p10RenderPage(p10PendingPage);
+                        p10PendingPage = null;
+                    }
+
+                });
+
+            });
+
+            const infoEl = document.getElementById("p10-page-info");
+
+            if (infoEl) {
+                infoEl.innerText = `Page ${num} / ${p10NumPages}`;
+            }
+        }
+
+
+        function p10QueueRenderPage(num) {
+            if (p10IsRendering) {
+                p10PendingPage = num;
+            } else {
+                p10RenderPage(num);
+            }
+        }
+
+
+        function p10PrevPage() {
+            if (p10CurrentPage <= 1) return;
+            p10CurrentPage--;
+            p10QueueRenderPage(p10CurrentPage);
+        }
+
+
+        function p10NextPage() {
+            if (p10CurrentPage >= p10NumPages) return;
+            p10CurrentPage++;
+            p10QueueRenderPage(p10CurrentPage);
+        }
+
+
+        function initProject10Pdf() {
+            if (!p10Doc) {
+                pdfjsLib
+                    .getDocument(p10PdfUrl)
+                    .promise
+                    .then(function (pdfDoc_) {
+                        p10Doc = pdfDoc_;
+                        p10NumPages = p10Doc.numPages;
+                        p10CurrentPage = 1;
+                        p10RenderPage(p10CurrentPage);
+                    })
+                    .catch(function (error) {
+                        console.error("Errore nel caricamento del PDF Project 10:", error);
+                    });
+            }
+        }
+
+
+
+        // =====================================================
+        // PROJECT 11 - GESTIONE PDF
+        // =====================================================
+
+        let p11Doc = null;
+        let p11NumPages = 0;
+        let p11CurrentPage = 1;
+        let p11IsRendering = false;
+        let p11PendingPage = null;
+
+        const p11PdfUrl = "3° anno/13) DESIGN/Collana.pdf";
+
+
+        function p11RenderPage(num) {
+
+            if (!p11Doc) return;
+
+            p11IsRendering = true;
+
+            p11Doc.getPage(num).then(function (page) {
+
+                const canvas = document.getElementById("p11-pdf-canvas");
+
+                if (!canvas) {
+                    p11IsRendering = false;
+                    return;
+                }
+
+                const ctx = canvas.getContext("2d");
+                const viewport = page.getViewport({ scale: 1.5 });
+
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+
+                const renderTask = page.render(renderContext);
+
+                renderTask.promise.then(function () {
+
+                    p11IsRendering = false;
+
+                    if (p11PendingPage !== null) {
+                        p11RenderPage(p11PendingPage);
+                        p11PendingPage = null;
+                    }
+
+                });
+
+            });
+
+            const infoEl = document.getElementById("p11-page-info");
+
+            if (infoEl) {
+                infoEl.innerText = `Page ${num} / ${p11NumPages}`;
+            }
+        }
+
+
+        function p11QueueRenderPage(num) {
+            if (p11IsRendering) {
+                p11PendingPage = num;
+            } else {
+                p11RenderPage(num);
+            }
+        }
+
+
+        function p11PrevPage() {
+            if (p11CurrentPage <= 1) return;
+            p11CurrentPage--;
+            p11QueueRenderPage(p11CurrentPage);
+        }
+
+
+        function p11NextPage() {
+            if (p11CurrentPage >= p11NumPages) return;
+            p11CurrentPage++;
+            p11QueueRenderPage(p11CurrentPage);
+        }
+
+
+        function initProject11Pdf() {
+            if (!p11Doc) {
+                pdfjsLib
+                    .getDocument(p11PdfUrl)
+                    .promise
+                    .then(function (pdfDoc_) {
+                        p11Doc = pdfDoc_;
+                        p11NumPages = p11Doc.numPages;
+                        p11CurrentPage = 1;
+                        p11RenderPage(p11CurrentPage);
+                    })
+                    .catch(function (error) {
+                        console.error("Errore nel caricamento del PDF Project 11:", error);
+                    });
+            }
+        }
+
+
+
+        // =====================================================
+        // PROJECT 17 - GESTIONE PDF (NUOVO)
+        // =====================================================
+
+        let p17Doc = null;
+        let p17NumPages = 0;
+        let p17CurrentPage = 1;
+        let p17IsRendering = false;
+        let p17PendingPage = null;
+
+        // Modifica con il percorso corretto del tuo PDF per il Project 17
+        const p17PdfUrl = "3° anno/13) DESIGN/Reciclio.pdf";
+
+
+        function p17RenderPage(num) {
+
+            if (!p17Doc) return;
+
+            p17IsRendering = true;
+
+            p17Doc.getPage(num).then(function (page) {
+
+                const canvas = document.getElementById("p17-pdf-canvas");
+
+                if (!canvas) {
+                    p17IsRendering = false;
+                    return;
+                }
+
+                const ctx = canvas.getContext("2d");
+                const viewport = page.getViewport({ scale: 1.5 });
+
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+
+                const renderTask = page.render(renderContext);
+
+                renderTask.promise.then(function () {
+
+                    p17IsRendering = false;
+
+                    if (p17PendingPage !== null) {
+                        p17RenderPage(p17PendingPage);
+                        p17PendingPage = null;
+                    }
+
+                });
+
+            });
+
+            const infoEl = document.getElementById("p17-page-info");
+
+            if (infoEl) {
+                infoEl.innerText = `Page ${num} / ${p17NumPages}`;
+            }
+        }
+
+
+        function p17QueueRenderPage(num) {
+            if (p17IsRendering) {
+                p17PendingPage = num;
+            } else {
+                p17RenderPage(num);
+            }
+        }
+
+
+        function p17PrevPage() {
+            if (p17CurrentPage <= 1) return;
+            p17CurrentPage--;
+            p17QueueRenderPage(p17CurrentPage);
+        }
+
+
+        function p17NextPage() {
+            if (p17CurrentPage >= p17NumPages) return;
+            p17CurrentPage++;
+            p17QueueRenderPage(p17CurrentPage);
+        }
+
+
+        function initProject17Pdf() {
+            if (!p17Doc) {
+                pdfjsLib
+                    .getDocument(p17PdfUrl)
+                    .promise
+                    .then(function (pdfDoc_) {
+                        p17Doc = pdfDoc_;
+                        p17NumPages = p17Doc.numPages;
+                        p17CurrentPage = 1;
+                        p17RenderPage(p17CurrentPage);
+                    })
+                    .catch(function (error) {
+                        console.error("Errore nel caricamento del PDF Project 17:", error);
+                    });
+            }
+        }
+
+
+
+        // =====================================================
+        // FUNZIONE PRINCIPALE DI NAVIGAZIONE
+        // =====================================================
+
+        function showPage(page) {
+
+
+            // -------------------------------------------------
+            // PROJECT 03 - IFRAME
+            // -------------------------------------------------
+
+            const project03Iframe =
+                document.getElementById(
+                    "project03-iframe"
+                );
+
+
+            if (project03Iframe) {
+
+                if (page === "project-03-page") {
+
+                    if (
+                        !project03Iframe.src ||
+                        project03Iframe.src === "about:blank"
+                    ) {
+
+                        project03Iframe.src =
+                            "https://sensational-praline-d5ca2d.netlify.app";
+                    }
+
+                } else {
+
+                    project03Iframe.src =
+                        "about:blank";
+                }
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 08 - IFRAME
+            // -------------------------------------------------
+
+            const project08Iframe =
+                document.getElementById(
+                    "project08-iframe"
+                );
+
+
+            if (project08Iframe) {
+
+                if (page === "project-08-page") {
+
+                    if (
+                        !project08Iframe.src ||
+                        project08Iframe.src === "about:blank"
+                    ) {
+
+                        project08Iframe.src =
+                            "https://splendorous-bublanina-937097.netlify.app";
+                    }
+
+                } else {
+
+                    project08Iframe.src =
+                        "about:blank";
+                }
+            }
+
+
+            // -------------------------------------------------
+            // PROJECT 24 - VIDEO LIFECYCLE
+            // -------------------------------------------------
+
+            const videoProject24 = document.getElementById("video-project-24");
+
+            if (videoProject24) {
+                if (page === "project-24-page") {
+                    videoProject24.currentTime = 0;
+                    videoProject24.play().catch(e => console.log("Autoplay impedito:", e));
+                } else {
+                    videoProject24.pause();
+                    videoProject24.currentTime = 0;
+                }
+            }
+
+
+            // -------------------------------------------------
+            // PROJECT 02 - FERMA VIDEO
+            // -------------------------------------------------
+
+            if (page !== "project-02-page") {
+
+                const project02Video =
+                    document.getElementById(
+                        "video-project-02"
+                    );
+
+
+                if (project02Video) {
+
+                    project02Video.pause();
+
+                    project02Video.currentTime = 0;
+                }
+            }
+
+
+            // -------------------------------------------------
+            // PROJECT 04 - FERMA VIDEO
+            // -------------------------------------------------
+
+            if (page !== "project-04-page") {
+
+                const project04Video =
+                    document.getElementById(
+                        "video-project-04"
+                    );
+
+
+                if (project04Video) {
+
+                    project04Video.pause();
+
+                    project04Video.currentTime = 0;
+                }
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 05 - VIDEO
+            // -------------------------------------------------
+
+            if (page !== "project-05-page") {
+
+                p5StopAllVideos();
+
+            } else {
+
+                setTimeout(() => {
+
+                    const currentVid =
+                        document.getElementById(
+                            "p5-video-" +
+                            p5CurrentIndex
+                        );
+
+
+                    if (currentVid) {
+
+                        currentVid
+                            .play()
+                            .catch(e =>
+                                console.log(
+                                    "Autoplay bloccato"
+                                )
+                            );
+                    }
+
+                }, 50);
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 06 - VIDEO
+            // -------------------------------------------------
+
+            if (page !== "project-06-page") {
+
+                p6StopAllVideos();
+
+            } else {
+
+                setTimeout(() => {
+
+                    const currentVid =
+                        document.getElementById(
+                            "p6-video-" +
+                            p6CurrentIndex
+                        );
+
+
+                    if (currentVid) {
+
+                        currentVid
+                            .play()
+                            .catch(e =>
+                                console.log(
+                                    "Autoplay bloccato"
+                                )
+                            );
+                    }
+
+                }, 50);
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 13 - VIDEO
+            // -------------------------------------------------
+
+            if (page !== "project-13-page") {
+
+                p13StopAllVideos();
+
+            } else {
+
+                setTimeout(() => {
+
+                    const currentVid =
+                        document.getElementById(
+                            "p13-video-" +
+                            p13CurrentIndex
+                        );
+
+
+                    if (currentVid) {
+
+                        currentVid
+                            .play()
+                            .catch(e =>
+                                console.log(
+                                    "Autoplay bloccato"
+                                )
+                            );
+                    }
+
+                }, 50);
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 15 - CAROSELLO GIF RESTART
+            // -------------------------------------------------
+
+            if (page === "project-15-page") {
+                p15UpdateCarousel();
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 07 - AUDIO
+            // -------------------------------------------------
+
+            if (page !== "project-07-page") {
+
+                const project07Audio =
+                    document.querySelector(
+                        "#project-07-page audio"
+                    );
+
+
+                if (project07Audio) {
+
+                    project07Audio.pause();
+
+                    project07Audio.currentTime = 0;
+                }
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 09 - VIDEO
+            // -------------------------------------------------
+
+            if (page !== "project-09-page") {
+
+                const project09Video =
+                    document.getElementById(
+                        "video-project-09"
+                    );
+
+
+                if (project09Video) {
+
+                    project09Video.pause();
+
+                    project09Video.currentTime = 0;
+                }
+
+            } else {
+
+                setTimeout(() => {
+
+                    const project09Video =
+                        document.getElementById(
+                            "video-project-09"
+                        );
+
+
+                    if (project09Video) {
+
+                        project09Video
+                            .play()
+                            .catch(e =>
+                                console.log(
+                                    "Autoplay bloccato"
+                                )
+                            );
+                    }
+
+                }, 50);
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 12 - VIDEO
+            // -------------------------------------------------
+
+            if (page !== "project-12-page") {
+
+                const project12Video =
+                    document.getElementById(
+                        "video-project-12"
+                    );
+
+
+                if (project12Video) {
+
+                    project12Video.pause();
+
+                    project12Video.currentTime = 0;
+                }
+
+            } else {
+
+                setTimeout(() => {
+
+                    const project12Video =
+                        document.getElementById(
+                            "video-project-12"
+                        );
+
+
+                    if (project12Video) {
+
+                        project12Video
+                            .play()
+                            .catch(e =>
+                                console.log(
+                                    "Autoplay bloccato"
+                                )
+                            );
+                    }
+
+                }, 50);
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 16 - VIDEO
+            // -------------------------------------------------
+
+            const project16Video = document.getElementById("video-project-16");
+            if (project16Video) {
+                if (page === "project-16-page") {
+                    setTimeout(() => {
+                        project16Video.currentTime = 0;
+                        project16Video.play().catch(e => {
+                            console.log("Autoplay bloccato dal browser");
+                        });
+                    }, 50);
+                } else {
+                    project16Video.pause();
+                    project16Video.currentTime = 0;
+                }
+            }
+
+
+
+
+
+            // -------------------------------------------------
+            // PROJECT 19 - VIDEO
+            // -------------------------------------------------
+
+            const project19Video = document.getElementById("video-project-19");
+            if (project19Video) {
+                if (page === "project-19-page") {
+                    setTimeout(() => {
+                        project19Video.currentTime = 0;
+                        project19Video.play().catch(e => {
+                            console.log("Autoplay bloccato dal browser");
+                        });
+                    }, 50);
+                } else {
+                    project19Video.pause();
+                    project19Video.currentTime = 0;
+                }
+            }
+
+
+
+
+
+
+
+            // -------------------------------------------------
+            // PROJECT 18 - VIDEO
+            // -------------------------------------------------
+
+            const project18Video = document.getElementById("video-project-18");
+            if (project18Video) {
+                if (page === "project-18-page") {
+                    setTimeout(() => {
+                        project18Video.currentTime = 0;
+                        project18Video.play().catch(e => {
+                            console.log("Autoplay bloccato dal browser");
+                        });
+                    }, 50);
+                } else {
+                    project18Video.pause();
+                    project18Video.currentTime = 0;
+                }
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 10 - PDF
+            // -------------------------------------------------
+
+            if (page === "project-10-page") {
+                initProject10Pdf();
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 11 - PDF
+            // -------------------------------------------------
+
+            if (page === "project-11-page") {
+                initProject11Pdf();
+            }
+
+
+
+            // -------------------------------------------------
+            // PROJECT 17 - PDF
+            // -------------------------------------------------
+
+            if (page === "project-17-page") {
+                initProject17Pdf();
+            }
+
+
+
+
+
+            // -------------------------------------------------
+            // PROJECT 20 - PDF
+            // -------------------------------------------------
+
+            if (page === "project-20-page") {
+                initProject20Pdf();
+            }
+
+
+
+            // =================================================
+            // NASCONDIAMO TUTTE LE PAGINE
+            // =================================================
+
+            const pages = [
+
+                "home-page",
+                "who-page",
+                "work-page",
+                "contact-page",
+
+                "project-01-page",
+                "project-02-page",
+                "project-03-page",
+                "project-04-page",
+                "project-05-page",
+                "project-06-page",
+                "project-07-page",
+                "project-08-page",
+                "project-09-page",
+                "project-10-page",
+                "project-11-page",
+                "project-12-page",
+                "project-13-page",
+                "project-14-page",
+                "project-15-page",
+                "project-16-page",
+                "project-17-page",
+                "project-18-page",
+                "project-19-page",
+                "project-20-page",
+                "project-21-page",
+                "project-22-page",
+                "project-23-page",
+                "project-24-page"
+
+            ];
+
+
+
+            pages.forEach(function (id) {
+
+                const element =
+                    document.getElementById(id);
+
+
+                if (element) {
+
+                    element.style.display =
+                        "none";
+                }
+            });
+
+
+
+            // =================================================
+            // MOSTRA LA PAGINA SELEZIONATA
+            // =================================================
+
+            const targetPage =
+                document.getElementById(page);
+
+
+            if (targetPage) {
+
+                targetPage.style.display =
+                    "block";
+            }
+
+
+
+            // =================================================
+            // RESET SCROLL
+            // =================================================
+
+            if (page === "work-page") {
+
+                const workPage =
+                    document.getElementById(
+                        "work-page"
+                    );
+
+
+                if (workPage) {
+
+                    workPage.scrollTop = 0;
+                }
+
+            } else if (
+                page.startsWith("project-")
+            ) {
+
+                const projPage =
+                    document.getElementById(page);
+
+
+                if (projPage) {
+
+                    projPage.scrollTop = 0;
+                }
+            }
+
+        }
+
+
+
+        // =====================================================
+        // APERTURA PROGETTI DINAMICA
+        // =====================================================
+
+        function openProject(
+            title,
+            imageSrc,
+            category,
+            description
+        ) {
+
+
+            const projectPages = {
+
+                "Project 01": "project-01-page",
+                "Project 02": "project-02-page",
+                "Project 03": "project-03-page",
+                "Project 04": "project-04-page",
+                "Project 05": "project-05-page",
+                "Project 06": "project-06-page",
+                "Project 07": "project-07-page",
+                "Project 08": "project-08-page",
+                "Project 09": "project-09-page",
+                "Project 10": "project-10-page",
+                "Project 11": "project-11-page",
+                "Project 12": "project-12-page",
+                "Project 13": "project-13-page",
+                "Project 14": "project-14-page",
+                "Project 15": "project-15-page",
+                "Project 16": "project-16-page",
+                "Project 17": "project-17-page",
+                "Project 18": "project-18-page",
+                "Project 19": "project-19-page",
+                "Project 20": "project-20-page",
+                "Project 21": "project-21-page",
+                "Project 22": "project-22-page",
+                "Project 23": "project-23-page",
+                "Project 24": "project-24-page"
+
+            };
+
+
+            const selectedPage =
+                projectPages[title];
+
+
+            if (selectedPage) {
+
+                showPage(selectedPage);
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         RESPONSIVE MOBILE
+    ====================================================== -->
+
+    <style>
+        @media (max-width: 700px) {
+
+            nav {
+                gap: 15px !important;
+            }
+
+            nav a {
+                font-size: 10px !important;
+            }
+
+            #home-page header>a,
+            #who-page header>a,
+            #work-page header>a,
+            #contact-page header>a {
+                font-size: 10px !important;
+            }
+
+            .center h1 {
+                font-size: 55px;
+                letter-spacing: -2px;
+            }
+
+            #contact-page main {
+                left: 15px;
+                top: 35%;
+                font-size: 12px;
+            }
+
+            #contact-page main>div {
+                margin-bottom: 28px;
+            }
+
+            #contact-page main>div:nth-last-child(2) {
+                margin-top: 55px;
+            }
+
+            #contact-page>div:nth-child(4) {
+                right: 15px;
+                font-size: 10px;
+            }
+
+        }
+    </style>
+
+
+</body>
+
+</html>
